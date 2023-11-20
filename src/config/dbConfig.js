@@ -1,7 +1,6 @@
-//
+require('dotenv').config();
 const mongoose = require('mongoose');
-const dbConfig =
-  'mongodb+srv://rafael:kgTKAkFCwVfaZPpB@cluster0.sxzcuy8.mongodb.net/annotations?retryWrites=true&w=majority';
+const dbConfig = process.env.DB_PASS;
 
 mongoose.set('strictQuery', true);
 const connection = mongoose.connect(dbConfig, {

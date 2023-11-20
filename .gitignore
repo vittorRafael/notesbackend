@@ -1,2 +1,2 @@
 node_modules
-password_mongo.txt
+.env
